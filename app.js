@@ -3,63 +3,44 @@ var rightNow = new Date();
 
 console.log(rightNow);
 
-// for change in string
+//1 for change in string
 console.log(rightNow.toString());
 
-// for day of weak
+//2 for day of weak
 console.log(rightNow.getDay())
 
-// for month 
+//3 for month 
 console.log(rightNow.getMonth());
 
-// for date of month
+//4 for date of month
 console.log(rightNow.getDate());
 
-// for full year
+//5 for full year
 console.log(rightNow.getFullYear());
 
-// for get hours 
+//6 for get hours 
 console.log(rightNow.getHours());
 
-// for get minutes 
+//7 for get minutes 
 console.log(rightNow.getMinutes());
 
-// for get seconds
+//8 for get seconds
 console.log(rightNow.getSeconds());
 
-// for get milli seconds
+//9 for get milli seconds
 console.log(rightNow.getMilliseconds());
 
-// for get Time since 01 Jan, 1970 in milliseconds 
+//10 for get Time since 01 Jan, 1970 in milliseconds 
 console.log(rightNow.getTime());
 
+// get age from time program
 
+var currentDate = new Date();
+var zainBirthDate = new Date('November 20, 2003');
 
+var currentMillisecond = currentDate.getTime();
+var zainMillisecond = zainBirthDate.getTime();
 
+var remaining = currentMillisecond - zainMillisecond;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var currentDate = new Date();
-// var zainBirthDate = new Date('November 20, 2003');
-
-// var currentMillisecond = currentDate.getTime();
-// var remainingsecond = zainBirthDate.getTime();
-
-// console.log(currentMillisecond - remainingsecond / 1000 / 60 / 60 / 24 / 365)
+console.log(Math.round(remaining/1000/60/60/24/7))
